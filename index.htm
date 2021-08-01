@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta name="og:locale" content="en-US">
+    <meta name="og:site_name" content="justchain.io">
+    <meta name="og:title" content="Stake MATIC and Earn Daily 7-14% ROI">
+    <meta name="og:description" content="Stake MATIC and Earn Daily 7-14% ROI">
+    <meta name="og:url" content="index.html">    
+    <title>Stake MATIC and Earn Daily 7-14% ROI</title>
+    <link rel="stylesheet" href="assets_ba/css/style.css">
+    <link rel="stylesheet" href="assets_ba/css/iziToast.min.css">	
+ 
+	<link href="assets_ba/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">	
+    <link href="assets_ba/vendor/icofont/icofont.min.css" rel="stylesheet">
+   
+	<link rel="stylesheet" href="assets_ba/anim/animate.min.css">	
+	
+      <!-- Favicons -->
+   <link href="assets_ba/img/Logo.png" rel="icon">  
+	
+</head>
+
+<body>
+
+    <div class="bg"></div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">             
+				
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+ 			   <tbody>				   
+			     <tr>
+ 			       <td width="30px" align="left">
+					   <img src="assets_ba/img/Logo.png" alt="">
+				   </td>
+ 			       <td width="30px" align="left">
+					    <div class="header__logo">MATICSTAKE</div>
+				   </td>					 
+ 			       <td align="right">					    
+					   <button class="header__btn" id="connect-btn" onclick="Connect()">Connect wallet</button>
+				   </td>
+ 			     </tr>
+			     <tr>
+ 			       			   
+ 			     </tr>				   
+				   
+ 			   </tbody>
+			  </table>				
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="main">
+        <div class="container">
+            <div class="main__inner">
+
+                <div class="main__inner-header">
+					
+                    <div class="main__total">
+					
+						
+				  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+				    <tbody>				     
+
+						
+					<tr>	
+					  <td>
+	                  <div class="social-links">
+                        <a href="StakePoly.html?s=08" class="twitter"><i class="icofont-twitter"></i></a>                                               
+                        <a href="https://t.me/Maticstake" class="telegram"><i class="icofont-telegram"></i></a> 	
+						<a href="poly_stake/index.htm?utm_medium=copy_link" class="instagram"><i class="icofont-instagram"></i></a>
+		                <a href="https://vm.tiktok.com/ZMdWkTLea/" class="tiktok"><i class="icofont-tumblr"></i></a> 		
+                      </div> 
+					  </td>								
+					  <td align="right">
+						 <div class="bt-container"> 
+						<a href="https://polygonscan.com/address/0x49CeB7A877A6C286f34C3dE7E35e207587452130#code" target="_blank" class="main__total-txt--btn">Contract</a>
+						  </div>
+					  </td>				
+					</tr>
+				   </tbody>	
+				  </table>	<br><br>
+						
+						
+						<table width="100%" border="0">
+  						<tbody>
+    						<tr>
+      						 <td align="center">
+					           <div id="launch-time"> 			        	
+                     
+                               </div>
+							 </td>
+    						</tr>
+  						</tbody>
+						</table>					
+
+						
+						
+					<table width="100%" border="0">
+  					<tbody>
+    				 <tr>
+    					 <td width="33.3%" align="center"><div class="main__total-txt">MATIC Price</div></td>
+						 <td width="33.3%" align="center"><div class="main__total-txt">Total Staked</div></td>
+     					 <td width="33.3%" align="center"><div class="main__total-txt">Balance</div></td>
+   					 </tr>		
+   					 <tr>
+   					   <td align="center"><div class="main__total-number" id="bnb-rate">...</div></td>
+					   <td align="center"><div class="main__total-number" id="total-staked">...</div></td>
+    				   <td align="center"><div class="main__total-number" id="total-balance">...</div></td>
+						 
+						 
+   					 </tr>
+  					</tbody>
+					</table>
+					
+                    </div>
+				</div>	
+					
+				<div class="main__inner-header">
+					
+					<div class="main__desc">
+						
+				  <table width="100%" border="0" cellspacing="2" cellpadding="2">
+				    <tbody>
+								
+				      <tr>
+				        <td width="25%" align="center"><a href="assets_ba/pdf_en.pdf" target="_blank"><img src="assets_ba/img/pdf-icon.png" width="35" height="45" alt=""></a></td>                       
+				        <td width="25%" align="center"><a href="assets_ba/pdf_es.pdf" target="_blank"><img src="assets_ba/img/pdf-icon.png" width="35" height="45" alt=""></a></td>
+						<td width="25%" align="center"><a href="assets_ba/Maticstake_Audit_Report.pdf" target="_blank"><img src="assets_ba/img/trust_logo.png" width="85" height="85" alt=""></a></td>
+						<td width="25%" align="center"><a href="https://medium.com/@rrt4442/maticstake-polyogn-matic-based-dapp-e5755da4012d" class="medium"><i class="icofont-medium"></i></a><img src="assets_ba/img/defiaudits_logo.png" width="65" height="65" alt=""></a></td>  
+				      </tr>
+				      <tr>
+				        <td width="25%" align="center"><a href="assets_ba/pdf_en.pdf" target="_blank">English</a></td>                        
+				        <td width="25%" align="center"><a href="assets_ba/pdf_es.pdf" target="_blank">Español</a></td>							
+						<td width="25%" align="center"><a href="assets_ba/Maticstake_Audit_Report.pdf" target="_blank">Trust Audit</a></td>	
+						<td width="25%" align="center"><a href="https://medium.com/@rrt4442/maticstake-polyogn-matic-based-dapp-e5755da4012d" target="_blank">medium</a></td>	
+				      </tr>
+				    </tbody>
+				  </table>		<br>						
+						
+                    <div class="main__text">
+                        <ul class="main__text-list">
+                            <li class="main__text-row">Total income: <span>Based on your tariff plan (from 7% to 10% daily) + daily increase</span>
+                            </li>
+                            <li class="main__text-row">Inportant: <span>Plans return are float and daily profit for a new deposit will increase by 1.0% daily</span>
+                            </li>
+                            <li class="main__text-row">Minimum deposit: <span>10 MATIC, no maximal limit. You can have multiple deposits</span></li>
+                            <li class="main__text-row">Withdraw: <span>Instantly Any time (if you use capitalization of interest you can withdraw only after end of your plan)</span></li>
+                        </ul>
+						
+                    </div>	
+						
+
+				
+						
+						
+					</div>					
+					
+					
+                </div>
+				
+				
+
+                <div class="main__inner-body">
+                    <div class="main__plan-item">
+                        <div class="main__body-plan">
+                            <h2 class="main__plan-title">Stake Plan 1</h2>
+
+                            <div class="main__plan-txt" id="daily-1">
+                                Daily Profit<span>...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total-1">
+                                Total Return<span>...</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Withdraw time<span>Any Time</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Days<span id="days-1">...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total--1">
+                                In ... days you will get<span>...</span>
+                            </div>
+
+                            <div class="input-group">
+                                  <input type="number" min="10" step="10" class="form-control" placeholder="Enter Amount" id="input-1">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">MATIC</span>
+                                </div>
+                            </div><br>
+
+                            <button class="main__plan-btn" onclick="stake(0,'#input-1')">Stake MATIC</button>
+
+                        </div>
+                    </div>
+                    <div class="main__plan-item">
+                        <div class="main__body-plan">
+                            <h2 class="main__plan-title">Stake Plan 2</h2>
+
+                            <div class="main__plan-txt" id="daily-2">
+                                Daily Profit<span>...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total-2">
+                                Total Return<span>...</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Withdraw time<span>Any Time</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Days<span id="days-2">...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total--2">
+                                In ... days you will get<span>...</span>
+                            </div>
+
+                            <div class="input-group">
+                                  <input type="number" min="10" step="10" class="form-control" placeholder="Enter Amount" id="input-2">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">MATIC</span>
+                                </div>
+                            </div><br>
+
+                            <button class="main__plan-btn" onclick="stake(1,'#input-2')">Stake MATIC</button>
+
+                        </div>
+                    </div>
+                    <div class="main__plan-item">
+                        <div class="main__body-plan">
+                            <h2 class="main__plan-title">Stake Plan 3</h2>
+
+                            <div class="main__plan-txt" id="daily-3">
+                                Daily Profit<span>...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total-3">
+                                Total Return<span>...</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Withdraw time<span>Any Time</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Days<span id="days-3">...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total--3">
+                                In ... days you will get<span>...</span>
+                            </div>
+
+                            <div class="input-group">
+                                  <input type="number" min="10" step="10" class="form-control" placeholder="Enter Amount" id="input-3">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">MATIC</span>
+                                </div>
+                            </div><br>
+
+                            <button class="main__plan-btn" onclick="stake(2,'#input-3')">Stake MATIC</button>
+
+                        </div>
+                    </div>
+
+
+                    <div class="main__plan-item plan--blue">
+                        <div class="main__body-plan">
+                            <h2 class="main__plan-title">Stake Plan 4</h2>
+
+                            <div class="main__plan-txt" id="daily-4">
+                                Daily Profit<span>...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total-4">
+                                Total Return<span>...</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Withdraw time<span>End of Plan</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Days<span id="days-4">...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total--4">
+                                In ... days you will get<span>...</span>
+                            </div>
+								
+                            <div class="input-group">
+                                  <input type="number" min="10" step="10" class="form-control" placeholder="Enter Amount" id="input-4">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">MATIC</span>
+                                </div>
+                            </div><br>
+
+                            <button class="main__plan-btn" onclick="stake(3,'#input-4')">Stake MATIC</button>
+                        </div>
+                    </div>
+                    <div class="main__plan-item plan--blue">
+                        <div class="main__body-plan">
+                            <h2 class="main__plan-title">Stake Plan 5</h2>
+
+                            <div class="main__plan-txt" id="daily-5">
+                                Daily Profit<span>...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total-5">
+                                Total Return<span>...</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Withdraw time<span>End of Plan</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Days<span id="days-5">...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total--5">
+                                In ... days you will get<span>...</span>
+                            </div>
+
+                            <div class="input-group">
+                                  <input type="number" min="10" step="10" class="form-control" placeholder="Enter Amount" id="input-5">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">MATIC</span>
+                                </div>
+                            </div><br>
+
+                            <button class="main__plan-btn" onclick="stake(4,'#input-5')">Stake MATIC</button>
+
+                        </div>
+                    </div>
+                    <div class="main__plan-item plan--blue">
+                        <div class="main__body-plan">
+                            <h2 class="main__plan-title">Stake Plan 6</h2>
+
+                            <div class="main__plan-txt" id="daily-6">
+                                Daily Profit<span>...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total-6">
+                                Total Return<span>...</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Withdraw time<span>End of Plan</span>
+                            </div>
+                            <div class="main__plan-txt">
+                                Days<span id="days-6">...</span>
+                            </div>
+                            <div class="main__plan-txt" id="total--6">
+                                In ... days you will get<span>...</span>
+                            </div>
+
+                            <div class="input-group">
+                                  <input type="number" min="10" step="10" class="form-control" placeholder="Enter Amount" id="input-6">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">MATIC</span>
+                                </div>
+                            </div><br>
+
+                            <button class="main__plan-btn" onclick="stake(5,'#input-6')">Stake MATIC</button>
+
+                        </div>
+                    </div>
+					
+                    <div class="info__text">
+                        <ul class="info__text-list">
+                            <li class="info__text-row">Important: <span>Purple Plans (4, 5 and 6) use capitalization of interest. This means the dividends generated are automatically
+reinvested to obtain a greater benefits. Withdrawal of earnings is only possible at the end of
+Plan.</span>
+                            </li>
+                        </ul>						
+                    </div>					
+
+                </div>
+
+                <div class="main__inner-footer">
+
+            
+
+                    <div class="main__footer-referral">
+
+                        <div class="main__total-W"><br>
+							
+					       <table width="100%" border="0">
+  					       <tbody>
+    					       <tr>
+      					        <td align="center"><div class="main__total-txt">Total Staked</div></td>
+    					       </tr>
+							   
+    					       <tr>
+      					        <td align="center"><div class="main__total-number" id="total-user-staked">...</div></td>
+    					       </tr>
+							   
+    					       <tr>
+      					        <td align="center"><div class="main__total-txt">Available for withdrawal</div></td>
+    					       </tr>
+							   
+    					       <tr>
+      					        <td align="center"><div class="main__total-number" id="user-available">...</div></td>
+    					       </tr>	
+							   
+    					       <tr>
+      					        <td align="center"><button class="withdraw-btn header__btn" id="withdraw-btn">Withdraw</button></td>
+    					       </tr>							   
+
+  					       </tbody>
+					       </table>	
+                            <br>
+
+                        </div>
+						
+					
+
+                        <div class="main__referral-link">
+
+                            <div class="main__referral-header">
+                                <label class="main__referral-label">
+                                    Your Referral Link
+                                    <input type="text" class="main__referral-input" value="..." id="ref-link">
+                                </label>
+
+                                <button class="header__btn main__referral-btn" onclick="copyToClipboard('#ref-link')">Copy</button>
+                            </div>
+
+                            <div class="main__referral-body">
+
+                                <div class="main__referral-col">
+                                    <div class="main__referral-txt">
+                                        Total Referral Earned
+                                        <div class="main__referral-perc" id="referral-earned">...</div>
+                                    </div>
+
+                                    <div class="main__referral-txt">
+                                        Total Referral Withdrawn
+                                        <div class="main__referral-perc" id="referral-withdrawn">...</div>
+                                    </div>
+
+                                    <div class="main__referral-txt">
+                                        Total Referrals
+                                        <div class="main__referral-perc" id="total-referrals">...</div>
+                                    </div>
+                                </div>
+
+                                <div class="main__referral-col">
+                                    <div class="main__referral-txt">
+                                        Earn MATIC for promotion <br><br>
+
+                                        You will receive:<br><br>
+
+                                        5% from each level 1 referral deposits<br>
+                                        2% from each level 2 referral deposits<br>
+                                        1% from each level 3 referral deposits<br><br>
+
+                                        Note! You need to have at least 1 deposit<br>
+                                        to start receive earnings<br>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="main__footer-stake" id="user-deposits">
+						
+                        
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="footer">
+		
+        <div class="container">
+            <div class="footer__inner">
+                   <table width="100%" border="0">
+                    <tbody>
+                       <tr>
+                         <td align="center"><img class="main__sponsors-img" src="assets_ba/img/sponsor.png" alt="Sponsors"></td>
+                       </tr>
+                     </tbody>
+                   </table>                   
+            </div>
+        </div>
+    </div>
+	
+<div id="preloader"><br><br>
+  <table width="100%" height="100%" border="1">
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+		 <img width="50px" height="50px" src="assets_ba/img/polygon.png" alt="" id="PolygonLogo">
+	  </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>			
+	
+    <script src="assets_ba/scripts/jquery.min.js"></script>
+    <script src="assets_ba/scripts/main.js"></script>
+    <script src="assets_ba/scripts/web3.min.js"></script>
+    <script src="assets_ba/scripts/index.js"></script>
+    <script src="assets_ba/scripts/iziToast.min.js"></script>
+	<script src="assets_ba/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets_ba/js/main.js"></script>
+	<script src="assets_ba/anim/animaciones.js"></script>
+</body>
+
+</html>
